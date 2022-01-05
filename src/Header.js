@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 function Header() {
     return (
         <div className='header'>
+          <div className="header__container">
             <Link to='/'>
                 <img
                     className="header__icon"
@@ -16,7 +17,7 @@ function Header() {
                     alt=""
                 />
             </Link>
-           
+
             <div className='header__center'>
                 <input type="text" />
                 <SearchIcon />
@@ -26,8 +27,9 @@ function Header() {
                 <p>Become a host</p>
                 <LanguageIcon />
                 <ExpandMoreIcon />
-                <Avatar />
+                <Avatar className="avatar" />
             </div>
+          </div>
         </div>
     )
 }

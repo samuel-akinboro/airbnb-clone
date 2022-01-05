@@ -1,12 +1,20 @@
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   position: sticky;
   top: 0;
   background-color: white;
   z-index: 100;
   width: 100%;
+}
+
+.header > .header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .header__icon {
@@ -37,6 +45,29 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 15vw;
+  min-width: 15vw;
   margin-right: 80px;
+}
+
+.header__right > p {
+  margin-right: 10px;
+}
+
+.header__right > .MuiSvgIcon-root:nth-child(2) {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.header__right > .avatar {
+  cursor: pointer;
+}
+
+@media(max-width: 768px){
+  .header__right > p {
+    display: none;
+  }
+
+  .header__center{
+    display: none;
+  }
 }
